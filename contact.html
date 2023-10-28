@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    
+    <nav class="sidebar">
+      <a href="#" class="logo">
+        <img src="photos/logo.png" alt="">
+      </a>
+
+
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title">Categories</div>
+
+          <li class="item">
+            <a href="main_page.html">Main</a>
+            
+          <li class="item">
+            <a href="education.html">Education</a>
+          </li>
+
+          <li class="item">
+            <a href="projects.html">Projects</a>
+          </li>
+
+          <li class="item">
+            <a href="favorites.html">Favorites</a>
+          </li>
+
+          <li class="item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+        <main class="main">
+<div>
+      <div>
+        <img class="my-main-photo" src="photos/my_photo.JPG" alt="">
+
+      </div>
+      
+
+      <div class="form-part">
+      <form action="#" method="post">
+        <h1>Share Your Valuable Comments!</h1>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Your Comments:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <input type="submit" value="Send" onclick="alertMessage()">
+    </form>
+  </div>
+</div>
+
+<footer>
+        
+  <a style="color:#EFE1D1; background-color: #EFE1D1" href="mailto:misepe@mef.edu.tr">
+      
+      <img src="photos/mail.png" alt="Mail" width="50" height="50">
+
+  </a >
+ <a style="color: #EFE1D1" href="https://www.linkedin.com/in/pelinmise/" target="_blank">
+  <img src="photos/linkedin.png" alt="Linkedin" width="50" height="50">
+  </a>    
+</footer>
+
+    </main>
+    <script>
+      function alertMessage() {
+        alert("Your valuable comments will be taken into consideration.");
+      }
+        
+    </script>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

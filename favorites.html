@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  </head>
+  <body>
+    
+    <nav class="sidebar">
+      <a href="#" class="logo">
+        <img src="photos/logo.png" alt="">
+      </a>
+
+
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title">Categories</div>
+
+          <li class="item">
+            <a href="main_page.html">Main</a>
+            
+          <li class="item">
+            <a href="education.html">Education</a>
+          </li>
+
+          <li class="item">
+            <a href="projects.html">Projects</a>
+          </li>
+
+          <li class="item">
+            <a href="favorites.html">Favorites</a>
+          </li>
+
+          <li class="item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+
+    <main class="main">
+
+<div class="slideshow-container">
+  <h1 class="favorites">My Favourite Movies</h1>
+  <div class="movies">
+    <img src="photos/movie1.png" style= "width:100%; max-height: 100%">
+    <a href="https://www.imdb.com/title/tt0120338/" target="_blank">Visit Website</a>
+  </div>
+
+  <div class="movies">
+    <img src="photos/movie2.png" style="width:100%">
+    <a href="https://www.imdb.com/title/tt0068646/" target="_blank">Visit Website</a>
+
+  </div>
+
+  <div class="movies">
+    <img src="photos/movie3.png" style="width:100%">
+    <a href="https://www.imdb.com/title/tt1375666/" target="_blank">Visit Website</a>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<div class="slideshow-container">
+  <h1 class="favorites">My Favourite TV Series</h1>
+
+  <div class="tvseries">
+    <img src="photos/tvseries1.png" style="width:100%">
+    <a href="https://www.imdb.com/title/tt2306299/" target="_blank">Visit Website</a>
+
+
+  </div>
+
+  <div class="tvseries">
+    <img src="photos/tvseries2.png" style="width:100%">
+    <a href="https://www.imdb.com/title/tt0460649/" target="_blank">Visit Website</a>
+
+  </div>
+
+  <div class="tvseries">
+    <img src="photos/tvseries3.png" style="width:100%">
+    <a href="https://www.imdb.com/title/tt0455275/" target="_blank">Visit Website</a>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<div class="slideshow-container">
+  <h1 class="favorites">My Favourite Books</h1>
+
+  <div class="books">
+    <img src="photos/book1.png" style="width:100%">
+    
+  </div>
+
+  <div class="books">
+    <img src="photos/book2.png" style="width:100%">
+  </div>
+
+  <div class="books">
+    <img src="photos/book3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+ 
+
+    </main>
+  
+
+    <script>
+      let slideIndex = [1,1,1];
+      let slideId = ["movies", "tvseries", "books"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+      showSlides(1, 2);
+
+
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
+      </script>
+    <script src="script.js"></script>
+  </body>
+</html>

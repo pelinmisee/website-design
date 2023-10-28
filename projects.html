@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav class="sidebar">
+      <a href="#" class="logo">
+        <img src="photos/logo.png" alt="">
+      </a>
+
+
+      <div class="menu-content">
+        <ul class="menu-items">
+        <div class="menu-title">Categories</div>
+
+            <li class="item">
+              <a href="main_page.html">Main</a>
+          <li class="item">
+            <a href="education.html">Education</a>
+          </li>
+
+          <li class="item">
+            <a href="projects.html">Projects</a>
+          </li>
+
+          <li class="item">
+            <a href="favorites.html">Favorites</a>
+          </li>
+
+          <li class="item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+    
+
+    <main class="main">
+
+        <div class="tabs">
+            <div class="tab" data-target="project1">Project 1</div>
+            <div class="tab" data-target="project2">Project 2</div>
+            <div class="tab" data-target="project3">Project 3</div>
+            <div class="tab" data-target="project4">Project 4</div>
+            <div class="tab" data-target="project5">Project 5</div>
+        </div>
+
+
+        <div id="project1" class="content">
+          <h1>Image Compression Using Huffman Algorithm</h1>
+          <p class="capital">Huffman coding assigns a set of source symbols, taking into account the frequency and probability values of the symbols. While doing this, longer resource symbols are given to items with low probability/frequency, while short resource symbols are given to items with high frequency, increasing the efficiency of the code. It is very effective to use min heap to achieve this.Huffman coding can also be used for image compression operations. In this project, we saw that by using huffman coding, we can reduce the size of images without destroying the image. I performed compression operations on gray pictures and colored pictures by calculating both with the array I produced from the image and with the difference array I produced by performing some operations on the array. When I decompressed each stage, I saw that I could reach the original image.</p>
+        </div>
+    
+        <div id="project2" class="content">
+            <h1>Spine Posture Detection Using Machine Learning</h1>
+            <p class="capital"> In this innovative project, my friend and I collaborated to develop a system aimed at detecting bad spine posture utilizing advanced machine learning algorithms. The primary objective was to create a robust and accurate system capable of identifying improper spine alignment, contributing to better posture awareness and potentially preventing associated health issues. The developed system holds significant potential in promoting spinal health awareness, especially in contexts where individuals may not have immediate access to healthcare professionals. By accurately detecting bad spine posture, the system can provide timely feedback to users, encouraging them to correct their posture and adopt healthier habits.
+              Through collaborative effort, this project successfully created a system capable of detecting bad spine posture using advanced machine learning techniques. The accurate classification of spine postures achieved by the system marks a significant step toward promoting better posture habits and spinal health awareness. The project demonstrates the potential of technology in positively impacting public health and highlights the importance of interdisciplinary collaboration in solving real-world health-related challenges. Through collaborative effort, this project successfully created a system capable of detecting bad spine posture using advanced machine learning techniques. The accurate classification of spine postures achieved by the system marks a significant step toward promoting better posture habits and spinal health awareness. The project demonstrates the potential of technology in positively impacting public health and highlights the importance of interdisciplinary collaboration in solving real-world health-related challenges.**
+            </p>
+
+
+
+
+            </div>
+    
+        <div id="project3" class="content">
+            <h1>Web Scraping For Creating A Dataset That Keeps House Features</h1>
+            <p class="capital">In this project, I conducted extensive web scraping using Python and the BeautifulSoup library to gather a large dataset containing diverse features of houses from a specific website. The collected data will serve as a crucial dataset for a subsequent project focused on house price prediction. The collected dataset, with its rich and varied information about houses, serves as the foundation for a house price prediction project. By leveraging the diverse features scraped from the website, the subsequent project can employ machine learning algorithms to analyze patterns and predict house prices accurately.Through this project, a substantial and well-organized dataset containing essential features of houses was successfully scraped from the designated website. This dataset will play a pivotal role in the subsequent project, where advanced data analysis and machine learning techniques will be applied to predict house prices accurately. The project showcased the importance of meticulous data collection and preparation for the success of data-driven projects.
+
+            </p>
+        </div>
+
+        <div id="project4" class="content">
+          <h1>Multimodal Fake News Detection</h1>
+          <p class="capital">In this project, I implemented a multimodal fake news detection system that leverages both textual and visual features of news articles. The project focused on the importance of multimodal data analysis and the significance of feature engineering in machine learning. The project demonstrated the importance of feature engineering in machine learning, particularly in the context of multimodal data analysis. The project also showcased the significance of multimodal data analysis, where both textual and visual features are leveraged to achieve better performance. The project provided valuable insights into the trade-offs between different feature engineering techniques and the importance of multimodal data analysis, contributing to the field of machine learning and data science.</p>
+        </div>
+
+        <div id="project5" class="content">
+          <h1>Private Sensitive Content Detection</h1>
+          <p class="capital"> In this project, I implemented a private sensitive content detection system that leverages both textual and visual features of news articles. The project focused on the importance of multimodal data analysis and the significance of feature engineering in machine learning. The project demonstrated the importance of feature engineering in machine learning, particularly in the context of multimodal data analysis. The project also showcased the significance of multimodal data analysis, where both textual and visual features are leveraged to achieve better performance. The project provided valuable insights into the trade-offs between different feature engineering techniques and the importance of multimodal data analysis, contributing to the field of machine learning and data science.</p>
+        </div>
+        </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
