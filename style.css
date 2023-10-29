@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #EFE1D1;
+}
+
 /*logo style*/
 .logo {
     font-size: 25px;
@@ -323,16 +327,6 @@ button:hover {
 
 
 /*image slider styles*/
-.slideshow-container {
-  width: 20%;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-
 * {box-sizing: border-box}
 .mySlides1, .mySlides2, .mySlides3 {display: none}
 img {vertical-align: middle;}
@@ -346,6 +340,10 @@ img {vertical-align: middle;}
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;  
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  top: 20%;
 }
 
 /* Next & previous buttons */
@@ -396,6 +394,36 @@ img {vertical-align: middle;}
   color: #3F2E3E;
 }
 
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.nested-list-item {
+  text-align: left;
+  color: #0F2C59;
+  background-color: #DAC0A3;
+  border-radius: 6px;
+  font-size: medium;
+  font-style: italic;
+
+}
+
+li ul li:nth-child(odd) {
+  color: #331D2C;
+}   
+
+li ul li:nth-child(even) {
+  color: #A78295;
+}
+
+ul li:hover .film-detay {
+  display: block;
+}
+
+.film-detay::marker {
+  content: none;
+}
 
 /*CONTACT PAGE STYLES*/
 form {
@@ -475,4 +503,23 @@ footer {
   left: 60%;
 }
 
+ol .name:nth-child(even) {
+  color: #331D2C;
+}   
+
+ol .name:nth-child(odd) {
+  color: #A78295;
+}
+
+.asc-list  {
+  list-style-type: none;
+  counter-reset: custom-counter;
+}
+
+.asc-list .name::before {
+  content: counter(custom-counter) ".";
+  counter-increment: custom-counter;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
 
